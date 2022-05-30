@@ -15,6 +15,7 @@ import team from './team'
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
 import modularImageBlock from './common/modularImageBlock'
+import modularDoubleImageBlock from './common/modularDoubleImageBlock'
 import textBlock from './common/modularTextBlock'
 
 export default createSchema({
@@ -29,6 +30,7 @@ export default createSchema({
     team,
     defaultImage,
     modularImageBlock,
+    modularDoubleImageBlock,
     textBlock,
     seo
   ]),

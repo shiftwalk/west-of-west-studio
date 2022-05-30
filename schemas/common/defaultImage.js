@@ -14,9 +14,15 @@ export default {
       type: 'string'
     },
     {
-      title: 'Caption (Optional)',
-      description: 'Optional supporting caption',
+      title: 'Caption Heading (Optional)',
+      description: 'Optional supporting caption heading',
       name: 'caption',
+      type: 'string'
+    },
+    {
+      title: 'Caption SubHeading (Optional)',
+      description: 'Optional supporting caption subheading',
+      name: 'captionSubHeading',
       type: 'string'
     }
   ]

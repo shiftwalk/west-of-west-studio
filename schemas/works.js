@@ -15,10 +15,31 @@ export default {
       }
     },
     {
-      title: "Title",
+      title: "Project Name",
       name: "title",
       type: "string",
       validation: Rule => Rule.required()
+    },
+    {
+      title: "Project Code",
+      name: "projectCode",
+      description: "The code number for this project, eg: 101, displayed as WW.101 on the Front-End",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
+      title: "Grid Project",
+      name: "gridProject",
+      description: "Toggling this on will add the project to main 'Works' grid",
+      type: "boolean",
+      initialValue: false,
+    },
+    {
+      title: "Non-Routed Project",
+      name: "nonRoutedProjects",
+      description: "Toggling this on will make this project an archive text only entry with no actual case study page",
+      type: "boolean",
+      initialValue: false,
     },
     {
       title: "Location: City",
@@ -108,6 +129,7 @@ export default {
       description: 'The modular content blocks for this project',
       type: 'array',
       of: [
+        {type: 'modularDoubleImageBlock', title: 'Double Image'},
         {type: 'modularImageBlock', title: 'Single Image'},
         {type: 'textBlock', title: 'Text'},
       ],
@@ -157,13 +179,14 @@ export default {
       title: 'title',
       locationCity: 'locationCity',
       locationState: 'locationState',
-      images: 'heroImages'
+      images: 'heroImages',
+      projectCode: 'projectCode',
     },
     prepare(selection) {
-      const {title, locationCity, locationState, images} = selection
+      const {title, locationCity, locationState, images, projectCode} = selection
       return {
         title: title,
-        subtitle: `${locationCity}, ${locationState}`,
+        subtitle: `WW.${projectCode} — ${locationCity}, ${locationState}`,
         media: images[0]
       }
     }
