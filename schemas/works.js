@@ -130,6 +130,7 @@ export default {
       type: 'array',
       of: [
         {type: 'modularDoubleImageBlock', title: 'Double Image'},
+        {type: 'modularSideBySideImageBlock', title: 'Side By Side Image'},
         {type: 'modularTripleImageBlock', title: 'Triple Image'},
         {type: 'modularImageBlock', title: 'Single Image'},
         {type: 'textBlock', title: 'Text'},
