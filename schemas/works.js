@@ -101,6 +101,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Thumbnail Image',
+      name: 'thumbnailImage',
+      type: 'defaultImage',
+      description: 'The image used as a thumbnail for this project n the word grid/list view',
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Hero Images',
       name: 'heroImages',
       type: 'array',
