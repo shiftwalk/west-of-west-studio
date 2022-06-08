@@ -10,18 +10,21 @@ export default {
       title: 'Image 1',
       name: 'image1',
       type: 'defaultImage',
+      description: 'Ideally square aspect ratio',
       validation: Rule => Rule.required()
     },
     {
       title: 'Image 2',
       name: 'image2',
       type: 'defaultImage',
+      description: 'Ideally landscape aspect ratio',
       validation: Rule => Rule.required()
     },
     {
       title: 'Image 3',
       name: 'image3',
       type: 'defaultImage',
+      description: 'Ideally portrait aspect ratio',
       validation: Rule => Rule.required()
     },
     {
