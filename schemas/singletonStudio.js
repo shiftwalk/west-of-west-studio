@@ -20,14 +20,6 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Hero Heading',
-      description: 'The large heading in the hero',
-      name: 'heroHeading',
-      type: 'text',
-      rows: 3,
-      validation: Rule => Rule.required()
-    },
-    {
       title: 'Hero Text',
       name: 'heroText',
       description: 'The small text block bottom left of the hero',
@@ -36,8 +28,14 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Hero Image',
-      name: 'heroImage',
+      title: 'Hero Image Left',
+      name: 'heroImageLeft',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Hero Image Right',
+      name: 'heroImageRight',
       type: 'defaultImage',
       validation: Rule => Rule.required()
     },
@@ -63,14 +61,6 @@ export default {
       options: {
         layout: 'grid',
       },
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Expectations Heading',
-      description: 'The large heading in the "Expectations" section',
-      name: 'expectationsHeading',
-      type: 'text',
-      rows: 3,
       validation: Rule => Rule.required()
     },
     {

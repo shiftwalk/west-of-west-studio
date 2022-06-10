@@ -125,10 +125,10 @@ export default {
     },
     {
       title: "Intro Text",
-      description: "The text block to introduce this piece of work",
+      description: "The text block to introduce this piece of work, first paragraph will be a large headline, second paragraph with be standard text",
       name: "introText",
-      type: "text",
-      rows: 3,
+      type: 'array', 
+      of: [{type: 'block'}],
     },
     {
       title: 'Content Blocks',

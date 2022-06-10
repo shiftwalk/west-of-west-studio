@@ -64,14 +64,6 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Content Heading',
-      description: 'The large heading below the maps',
-      name: 'contentHeading',
-      type: 'text',
-      rows: 3,
-      validation: Rule => Rule.required()
-    },
-    {
       title: 'General Email',
       name: 'generalEmail',
       type: 'string',

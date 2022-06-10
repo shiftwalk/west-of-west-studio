@@ -58,16 +58,18 @@ export default {
       ]
     },
     {
-      title: 'Featured Works',
-      name: 'featuredWorks',
-      description: 'The project to feature on the home page content area.',
-      type: 'reference',
-      options: {
-        disableNew: true,
-      },
-      to: [
-        {type: 'works'}
-      ]
+      title: 'Works Image',
+      name: 'worksImage',
+      description: 'The image to display for the "Works" link',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Studio Image',
+      name: 'studioImage',
+      description: 'The image to display for the "Studio" link',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
     },
     {
       title: 'SEO / Share Settings',
