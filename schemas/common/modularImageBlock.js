@@ -23,6 +23,8 @@ export default {
           { title: 'Centered', value: 'centered' },
           { title: 'Left Aligned', value: 'left-aligned' },
           { title: 'Right Aligned', value: 'right-aligned' },
+          { title: 'Left Aligned (Portrait)', value: 'left-aligned-portrait' },
+          { title: 'Right Aligned (Portrait)', value: 'right-aligned-portrait' },
         ],
         layout: 'radio' // <-- defaults to 'dropdown'
       },

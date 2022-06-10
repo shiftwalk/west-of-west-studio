@@ -1,4 +1,5 @@
 import slugify from '../utils/slugify'
+import { FiUser } from 'react-icons/fi'
 
 export default {
   title: "Works",
@@ -99,6 +100,40 @@ export default {
         layout: 'radio' // <-- defaults to 'dropdown'
       },
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Credits',
+      name: 'credits',
+      description: 'Credits for this project (Optional)',
+      type: 'array', 
+      of: [{
+        title: 'Credit',
+        name: 'credit',
+        type: 'object',
+        icon: FiUser,
+        fields: [
+          {
+            title: 'Job',
+            name: 'job',
+            type: 'string',
+            description: 'eg: "Photographer", "Consultant", etc...',
+            validation: Rule => Rule.required()
+          },
+          {
+            title: 'Name',
+            name: 'name',
+            type: 'string',
+            description: 'eg: "Clayton Taylor"',
+            validation: Rule => Rule.required()
+          },
+        ],
+        preview: {
+          select: {
+            title: 'job',
+            subtitle: 'name'
+          }
+        }
+      }],
     },
     {
       title: 'Thumbnail Image',
