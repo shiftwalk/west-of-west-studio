@@ -21,6 +21,7 @@ export default {
         list: [
           { title: 'Full Bleed', value: 'full-bleed' },
           { title: 'Centered', value: 'centered' },
+          { title: 'Centered (Portrait)', value: 'centered-portrait' },
           { title: 'Left Aligned', value: 'left-aligned' },
           { title: 'Right Aligned', value: 'right-aligned' },
           { title: 'Left Aligned (Portrait)', value: 'left-aligned-portrait' },
