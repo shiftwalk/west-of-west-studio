@@ -31,10 +31,32 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: "Hero Image",
+      title: "Teaser Image",
       name: "heroImage",
+      description: "The image used on the grid to tease this journal entry.",
       type: "defaultImage",
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Content - Text',
+      name: 'contentText',
+      type: 'array', 
+      of: [{type: 'block'}]
+    },
+    {
+      title: 'Content - Images',
+      name: 'contentImages',
+      type: 'array',
+      of: [
+        {
+          name: 'image',
+          type: 'defaultImage',
+          title: 'Image',
+        },
+      ],
+      options: {
+        layout: 'grid',
+      }
     },
     {
       name: 'slug',
