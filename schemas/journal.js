@@ -21,6 +21,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Short Title",
+      name: "shortTitle",
+      type: "string",
+      description: "Optional short title which is used when referencing this journal entry within other journal entries (for shorter links).",
+    },
+    {
       title: "Post Date",
       description: "Press the button to the right to pick a date.",
       name: "date",
@@ -36,6 +42,59 @@ export default {
       description: "The image used on the grid to tease this journal entry.",
       type: "defaultImage",
       validation: Rule => Rule.required()
+    },
+    {
+      title: 'Related Project Links',
+      name: 'projectLinks',
+      type: 'array',
+      description: 'Optionally add related project links to the journal entry.',
+      of: [
+        {
+          title: 'Project',
+          name: 'project',
+          type: 'reference',
+          to: [{type: 'works'}]
+        },
+      ],
+    },
+    {
+      title: 'Related Journal Links',
+      name: 'journalLinks',
+      type: 'array',
+      description: 'Optionally add related journal links to the journal entry.',
+      of: [
+        {
+          title: 'Journal',
+          name: 'journal',
+          type: 'reference',
+          to: [{type: 'journal'}]
+        },
+      ],
+    },
+    {
+      title: 'Related External Links',
+      name: 'externalLinks',
+      type: 'array',
+      description: 'Optionally add related external links to the journal entry.',
+      of: [
+        {
+          title: 'Link',
+          name: 'link',
+          type: 'object',
+          fields: [
+            {
+              title: 'Link Title',
+              name: 'linkTitle',
+              type: 'string'
+            },
+            {
+              title: 'Link Url',
+              name: 'linkUrl',
+              type: 'string'
+            }
+          ]
+        }
+      ],
     },
     {
       title: 'Content - Text',
