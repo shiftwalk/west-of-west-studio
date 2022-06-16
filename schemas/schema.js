@@ -15,9 +15,11 @@ import team from './team'
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
 import modularImageBlock from './common/modularImageBlock'
+import modularInteractiveImageBlock from './common/modularInteractiveImageBlock'
 import modularDoubleImageBlock from './common/modularDoubleImageBlock'
 import modularTripleImageBlock from './common/modularTripleImageBlock'
 import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
+import modularBeforeAfterBlock from './common/modularBeforeAfterBlock'
 import textBlock from './common/modularTextBlock'
 
 export default createSchema({
@@ -32,6 +34,8 @@ export default createSchema({
     team,
     defaultImage,
     modularImageBlock,
+    modularBeforeAfterBlock,
+    modularInteractiveImageBlock,
     modularTripleImageBlock,
     modularDoubleImageBlock,
     modularSideBySideImageBlock,

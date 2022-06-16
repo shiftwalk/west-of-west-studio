@@ -175,6 +175,8 @@ export default {
         {type: 'modularSideBySideImageBlock', title: 'Side By Side Image'},
         {type: 'modularTripleImageBlock', title: 'Triple Image'},
         {type: 'modularImageBlock', title: 'Single Image'},
+        {type: 'modularInteractiveImageBlock', title: 'Interactive Image'},
+        {type: 'modularBeforeAfterBlock', title: 'Before / After'},
         {type: 'textBlock', title: 'Text'},
       ],
     },
