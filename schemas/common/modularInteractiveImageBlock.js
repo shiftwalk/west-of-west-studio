@@ -24,6 +24,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Autoplay',
+      name: 'autoplay',
+      type: 'boolean',
+      description: 'If this is toggled on, the images will automatically tick along without mouse interaction, best used without captions.',
+    },
+    {
       title: 'Layout',
       name: 'layout',
       type: 'string',
