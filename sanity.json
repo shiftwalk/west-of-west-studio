@@ -18,7 +18,8 @@
     "@sanity/production-preview",
     "vercel-deploy",
     "order-documents",
-    "note-field"
+    "note-field",
+    "@sanity/orderable-document-list"
   ],
   "env": {
     "development": {

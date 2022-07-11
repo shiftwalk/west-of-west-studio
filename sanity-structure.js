@@ -1,4 +1,5 @@
 import S from "@sanity/desk-tool/structure-builder";
+import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import IframePreview from './preview/IFramePreview'
 
 import {
@@ -43,6 +44,20 @@ export default () =>
       S.listItem().title('Team').child(S.documentTypeList('team').title('Team')).icon(FiUsers),
       S.divider(),
       S.listItem().title('Works').child(S.documentTypeList('works').title('Works')).icon(FiCamera),
+      S.divider(),
+      orderableDocumentListDeskItem({
+        type: 'works',
+        title: 'Works (Grid Ordering)',
+        icon: FiCamera,
+        // Required if using multiple lists of the same 'type'
+        id: 'orderable-work-grid',
+        // See notes on adding a `filter` below
+        filter: `gridProject == true`,
+        params: {
+          gridProject: true
+        },
+      }),
+
       S.divider(),
       S.listItem().title('Journal').child(S.documentTypeList('journal').title('Journal')).icon(FiBook),
       S.divider(),
