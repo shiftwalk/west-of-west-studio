@@ -27,6 +27,13 @@ export default {
       description: "Optional short title which is used when referencing this journal entry within other journal entries (for shorter links).",
     },
     {
+      title: "Routed Article",
+      name: "routedArticle",
+      description: "Toggling this on will create an internal route for this journal entry (used for heavier content pieces)",
+      type: "boolean",
+      initialValue: false,
+    },
+    {
       title: "Post Date",
       description: "Press the button to the right to pick a date.",
       name: "date",
