@@ -30,6 +30,12 @@ export default {
       description: 'If this is toggled on, the images will automatically tick along without mouse interaction, best used without captions.',
     },
     {
+      title: 'Crossfade',
+      name: 'crossfade',
+      type: 'boolean',
+      description: 'If this is toggled on, the images will crossfade between each other rather than snap, generally used for "before/after" shots.',
+    },
+    {
       title: 'Layout',
       name: 'layout',
       type: 'string',

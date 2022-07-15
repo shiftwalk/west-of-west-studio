@@ -44,7 +44,9 @@ export default {
           fields: [
             {name: 'title', type: 'string', title: 'Title'},
             {name: 'coordinates', type: 'string', title: 'Co-Ordinates'},
-            {name: 'address', type: 'text', rows: 3, title: 'Address'}
+            {name: 'address', type: 'text', rows: 3, title: 'Address'},
+            {name: 'directionsUrl', type: 'url', title: 'Directions URL', description: 'The google URL for this space'},
+            {name: 'image', type: 'defaultImage', title: 'Image'},
           ],
           preview: {
             select: {
