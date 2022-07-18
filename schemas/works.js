@@ -11,7 +11,7 @@ export default {
   type: "document",
   orderings: [orderRankOrdering],
   fields: [
-    orderRankField({ type: 'category', hidden: false }),
+    orderRankField({ type: 'category', hidden: true }),
     {
       name: 'devNote',
       type: 'note',
@@ -42,9 +42,9 @@ export default {
       initialValue: false,
     },
     {
-      title: "Non-Routed Project",
+      title: "Non-Routed Archived Project",
       name: "nonRoutedProjects",
-      description: "Toggling this on will make this project an archive text only entry with no actual case study page",
+      description: "Toggling this on will make this project an archive text only entry with no actual case study page (when the above toggle is false)",
       type: "boolean",
       initialValue: false,
     },
@@ -165,6 +165,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Super Wide Hero",
+      name: "superWideHero",
+      description: "Toggling this on will adjust the hero aspect ratio for super wide imagery",
+      type: "boolean",
+      initialValue: false,
+    },
+    {
       title: "Intro Text",
       description: "The text block to introduce this piece of work, first paragraph will be a large headline, second paragraph with be standard text",
       name: "introText",
@@ -238,7 +245,7 @@ export default {
       const {title, locationCity, locationState, images, projectCode} = selection
       return {
         title: title,
-        subtitle: `WW.${projectCode} — ${locationCity}, ${locationState}`,
+        subtitle: `${projectCode} — ${locationCity}, ${locationState}`,
         media: images[0]
       }
     }

@@ -44,6 +44,13 @@ export default {
       initialValue: false,
     },
     {
+      title: "Has Bio",
+      name: "hasBio",
+      type: "boolean",
+      description: "Toggling this on will let you click through on this person to see their biography",
+      initialValue: false,
+    },
+    {
       title: 'Image',
       name: 'image',
       type: 'defaultImage',
