@@ -46,16 +46,10 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Featured Journal Entry',
-      name: 'featuredJournalEntry',
-      description: 'The journal entry to feature on the home page content area.',
-      type: 'reference',
-      options: {
-        disableNew: true,
-      },
-      to: [
-        {type: 'journal'}
-      ]
+      title: 'Journal Image',
+      name: 'journalImage',
+      description: 'The image to display for the "Journal" link',
+      type: 'defaultImage',
     },
     {
       title: 'Works Image',
