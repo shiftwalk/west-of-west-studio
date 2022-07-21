@@ -18,19 +18,19 @@ export default {
       type: "string",
       validation: Rule => Rule.required()
     },
-    {
-      title: "Location",
-      name: "location",
-      type: "string",
-      options: {
-        list: [
-          {title: 'Los Angeles', value: 'la'},
-          {title: 'Portland', value: 'portland'},
-        ], // <-- predefined values
-        layout: 'radio' // <-- defaults to 'dropdown'
-      },
-      validation: Rule => Rule.required()
-    },
+    // {
+    //   title: "Location",
+    //   name: "location",
+    //   type: "string",
+    //   options: {
+    //     list: [
+    //       {title: 'Los Angeles', value: 'la'},
+    //       {title: 'Portland', value: 'portland'},
+    //     ], // <-- predefined values
+    //     layout: 'radio' // <-- defaults to 'dropdown'
+    //   },
+    //   validation: Rule => Rule.required()
+    // },
     {
       title: "Role",
       name: "role",
@@ -38,11 +38,16 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: "Principle",
-      name: "principle",
-      type: "boolean",
-      initialValue: false,
+      title: "Accreditations",
+      name: "accreditations",
+      type: "string"
     },
+    // {
+    //   title: "Principle",
+    //   name: "principle",
+    //   type: "boolean",
+    //   initialValue: false,
+    // },
     {
       title: "Has Bio",
       name: "hasBio",
