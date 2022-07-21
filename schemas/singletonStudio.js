@@ -19,68 +19,137 @@ export default {
       type: 'string',
       validation: Rule => Rule.required()
     },
+    // {
+    //   title: 'Hero Text',
+    //   name: 'heroText',
+    //   description: 'The small text block bottom left of the hero',
+    //   type: 'text',
+    //   rows: 3,
+    //   validation: Rule => Rule.required()
+    // },
+    // {
+    //   title: 'Hero Image Left',
+    //   name: 'heroImageLeft',
+    //   type: 'defaultImage',
+    //   validation: Rule => Rule.required()
+    // },
+    // {
+    //   title: 'Hero Image Right',
+    //   name: 'heroImageRight',
+    //   type: 'defaultImage',
+    //   validation: Rule => Rule.required()
+    // },
+    // {
+    //   title: 'Content Heading',
+    //   description: 'The large heading below the hero',
+    //   name: 'contentHeading',
+    //   type: 'text',
+    //   rows: 5,
+    //   validation: Rule => Rule.required()
+    // },
     {
-      title: 'Hero Text',
-      name: 'heroText',
-      description: 'The small text block bottom left of the hero',
+      title: 'Work Block Heading',
+      name: 'workBlockHeading',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Work Block Text',
+      name: 'workBlockText',
+      type: 'text',
+      rows: 4,
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Content Image',
+      name: 'contentImage',
+      type: 'defaultImage',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Practice Block Heading',
+      name: 'practiceBlockHeading',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Practice Block Text',
+      name: 'practiceBlockText',
+      type: 'text',
+      rows: 4,
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Quote',
+      name: 'quote',
       type: 'text',
       rows: 3,
       validation: Rule => Rule.required()
     },
     {
-      title: 'Hero Image Left',
-      name: 'heroImageLeft',
-      type: 'defaultImage',
+      title: 'Quote Author',
+      name: 'quoteAuthor',
+      type: 'string',
       validation: Rule => Rule.required()
     },
+    // {
+    //   title: 'Content Images',
+    //   name: 'contentImages',
+    //   type: 'array',
+    //   of: [
+    //     {
+    //       name: 'image',
+    //       type: 'defaultImage',
+    //       title: 'Image',
+    //     },
+    //   ],
+    //   options: {
+    //     layout: 'grid',
+    //   },
+    //   validation: Rule => Rule.required()
+    // },
     {
-      title: 'Hero Image Right',
-      name: 'heroImageRight',
-      type: 'defaultImage',
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Content Heading',
-      description: 'The large heading below the hero',
-      name: 'contentHeading',
+      title: 'Past Team',
+      name: 'pastTeam',
+      description: 'The comma seperated list of past team members',
       type: 'text',
-      rows: 5,
+      rows: 3,
       validation: Rule => Rule.required()
     },
     {
-      title: 'Content Images',
-      name: 'contentImages',
-      type: 'array',
-      of: [
-        {
-          name: 'image',
-          type: 'defaultImage',
-          title: 'Image',
-        },
-      ],
-      options: {
-        layout: 'grid',
-      },
+      title: 'Recognition',
+      name: 'recognition',
+      description: 'The comma seperated list of recoginitions',
+      type: 'text',
+      rows: 3,
       validation: Rule => Rule.required()
     },
     {
-      title: 'Services Text',
-      description: 'The supporting text for the "Services" section',
-      name: 'servicesText',
-      type: 'array', 
-      of: [{type: 'block'}],
+      title: 'Publications',
+      name: 'publications',
+      description: 'The comma seperated list of publications',
+      type: 'text',
+      rows: 3,
       validation: Rule => Rule.required()
     },
-    {
-      title: 'Services',
-      description: 'The list of services that West Of West provide.',
-      name: 'services',
-      type: 'array',
-      of: [{
-        type: 'string',
-        validation: Rule => Rule.required()
-      }],
-    },
+    // {
+    //   title: 'Services Text',
+    //   description: 'The supporting text for the "Services" section',
+    //   name: 'servicesText',
+    //   type: 'array', 
+    //   of: [{type: 'block'}],
+    //   validation: Rule => Rule.required()
+    // },
+    // {
+    //   title: 'Services',
+    //   description: 'The list of services that West Of West provide.',
+    //   name: 'services',
+    //   type: 'array',
+    //   of: [{
+    //     type: 'string',
+    //     validation: Rule => Rule.required()
+    //   }],
+    // },
     {
       title: 'SEO / Share Settings',
       name: 'seo',
