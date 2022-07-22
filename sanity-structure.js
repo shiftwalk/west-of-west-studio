@@ -41,7 +41,12 @@ export default () =>
       S.divider(),
       S.listItem().title('Studio').child(S.editor().id('studio').schemaType('studio').documentId('singleton-studio').views(getPreview('studio'))).icon(FiBox),
       S.divider(),
-      S.listItem().title('Team').child(S.documentTypeList('team').title('Team')).icon(FiUsers),
+      // S.listItem().title('Team').child(S.documentTypeList('team').title('Team')).icon(FiUsers),
+      orderableDocumentListDeskItem({
+        type: 'team',
+        title: 'Team',
+        icon: FiUsers
+      }),
       S.divider(),
       S.listItem().title('Works').child(S.documentTypeList('works').title('Works')).icon(FiCamera),
       S.divider(),

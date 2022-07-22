@@ -17,7 +17,6 @@
     "media",
     "@sanity/production-preview",
     "vercel-deploy",
-    "order-documents",
     "note-field",
     "@sanity/orderable-document-list"
   ],

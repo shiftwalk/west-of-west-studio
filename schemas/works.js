@@ -11,7 +11,7 @@ export default {
   type: "document",
   orderings: [orderRankOrdering],
   fields: [
-    orderRankField({ type: 'category', hidden: true }),
+    orderRankField({ type: 'category', hidden: false }),
     {
       name: 'devNote',
       type: 'note',
