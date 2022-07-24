@@ -190,6 +190,7 @@ export default {
         {type: 'modularImageBlock', title: 'Single Image'},
         {type: 'modularInteractiveImageBlock', title: 'Interactive Image'},
         {type: 'modularBeforeAfterBlock', title: 'Before / After'},
+        {type: 'modularProcessBlock', title: 'Process Gallery'},
         {type: 'textBlock', title: 'Text'},
       ],
     },

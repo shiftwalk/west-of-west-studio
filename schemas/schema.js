@@ -22,6 +22,7 @@ import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
 import modularBeforeAfterBlock from './common/modularBeforeAfterBlock'
 import textBlock from './common/modularTextBlock'
 import singletonGlobals from './singletonGlobals'
+import modularProcessBlock from './common/modularProcessBlock'
 
 export default createSchema({
   name: 'default',
@@ -39,6 +40,7 @@ export default createSchema({
     modularBeforeAfterBlock,
     modularInteractiveImageBlock,
     modularTripleImageBlock,
+    modularProcessBlock,
     modularDoubleImageBlock,
     modularSideBySideImageBlock,
     textBlock,
