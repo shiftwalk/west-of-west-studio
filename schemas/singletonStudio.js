@@ -48,13 +48,19 @@ export default {
     //   validation: Rule => Rule.required()
     // },
     {
-      title: 'Work Block Heading',
+      title: 'Block One Heading',
       name: 'workBlockHeading',
       type: 'string',
       validation: Rule => Rule.required()
     },
     {
-      title: 'Work Block Text',
+      title: 'Block One Meta Title',
+      name: 'workBlockMetaTitle',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Block One Text',
       name: 'workBlockText',
       type: 'text',
       rows: 4,
@@ -64,16 +70,21 @@ export default {
       title: 'Content Image',
       name: 'contentImage',
       type: 'defaultImage',
-      validation: Rule => Rule.required()
     },
     {
-      title: 'Practice Block Heading',
+      title: 'Block Two Heading',
       name: 'practiceBlockHeading',
       type: 'string',
       validation: Rule => Rule.required()
     },
     {
-      title: 'Practice Block Text',
+      title: 'Block Two Meta Title',
+      name: 'practiceBlockMetaTitle',
+      type: 'string',
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Block Two Text',
       name: 'practiceBlockText',
       type: 'text',
       rows: 4,
@@ -84,13 +95,16 @@ export default {
       name: 'quote',
       type: 'text',
       rows: 3,
-      validation: Rule => Rule.required()
     },
     {
       title: 'Quote Author',
       name: 'quoteAuthor',
       type: 'string',
-      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Content Image Two',
+      name: 'contentImageTwo',
+      type: 'defaultImage',
     },
     // {
     //   title: 'Content Images',
@@ -114,7 +128,6 @@ export default {
       description: 'The comma seperated list of past team members',
       type: 'text',
       rows: 3,
-      validation: Rule => Rule.required()
     },
     {
       title: 'Recognition',
@@ -122,7 +135,6 @@ export default {
       description: 'The comma seperated list of recoginitions',
       type: 'text',
       rows: 3,
-      validation: Rule => Rule.required()
     },
     {
       title: 'Publications',
@@ -130,7 +142,6 @@ export default {
       description: 'The comma seperated list of publications',
       type: 'text',
       rows: 3,
-      validation: Rule => Rule.required()
     },
     // {
     //   title: 'Services Text',
