@@ -21,6 +21,7 @@ import modularTripleImageBlock from './common/modularTripleImageBlock'
 import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
 import modularBeforeAfterBlock from './common/modularBeforeAfterBlock'
 import textBlock from './common/modularTextBlock'
+import singletonGlobals from './singletonGlobals'
 
 export default createSchema({
   name: 'default',
@@ -29,6 +30,7 @@ export default createSchema({
     singletonHome,
     singletonStudio,
     singletonContact,
+    singletonGlobals,
     works,
     journal,
     team,

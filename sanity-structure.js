@@ -8,7 +8,8 @@ import {
   FiBox,
   FiBook,
   FiMail,
-  FiUsers
+  FiUsers,
+  FiCircle
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -67,4 +68,6 @@ export default () =>
       S.listItem().title('Journal').child(S.documentTypeList('journal').title('Journal')).icon(FiBook),
       S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact').views(getPreview('contact'))).icon(FiMail),
+      S.divider(),
+      S.listItem().title('Globals').child(S.editor().id('globals').schemaType('globals').documentId('singleton-globals').views(getPreview('globals'))).icon(FiCircle),
     ]);
