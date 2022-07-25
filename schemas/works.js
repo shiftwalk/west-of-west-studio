@@ -12,15 +12,15 @@ export default {
   orderings: [orderRankOrdering],
   fields: [
     orderRankField({ type: 'category', hidden: false }),
-    {
-      name: 'devNote',
-      type: 'note',
-      options: {
-        headline: 'Dev Note: Work In Progress',
-        message: 'This page is a work in progress and may change, please feel free to still use.',
-        tone: 'caution'
-      }
-    },
+    // {
+    //   name: 'devNote',
+    //   type: 'note',
+    //   options: {
+    //     headline: 'Dev Note: Work In Progress',
+    //     message: 'This page is a work in progress and may change, please feel free to still use.',
+    //     tone: 'caution'
+    //   }
+    // },
     {
       title: "Project Name",
       name: "title",
@@ -185,6 +185,7 @@ export default {
       type: 'array',
       of: [
         {type: 'modularDoubleImageBlock', title: 'Double Image'},
+        {type: 'modularDoubleLandscapeImageBlock', title: 'Double Landscape Image'},
         {type: 'modularSideBySideImageBlock', title: 'Side By Side Image'},
         {type: 'modularTripleImageBlock', title: 'Triple Image'},
         {type: 'modularImageBlock', title: 'Single Image'},

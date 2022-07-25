@@ -5,15 +5,15 @@ export default {
   name: 'journal',
   type: "document",
   fields: [
-    {
-      name: 'devNote',
-      type: 'note',
-      options: {
-        headline: 'Dev Note: Work In Progress',
-        message: 'This page is a work in progress and may change, please feel free to still use.',
-        tone: 'caution'
-      }
-    },
+    // {
+    //   name: 'devNote',
+    //   type: 'note',
+    //   options: {
+    //     headline: 'Dev Note: Work In Progress',
+    //     message: 'This page is a work in progress and may change, please feel free to still use.',
+    //     tone: 'caution'
+    //   }
+    // },
     {
       title: "Title",
       name: "title",

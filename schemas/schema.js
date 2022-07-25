@@ -17,6 +17,7 @@ import defaultImage from './common/defaultImage'
 import modularImageBlock from './common/modularImageBlock'
 import modularInteractiveImageBlock from './common/modularInteractiveImageBlock'
 import modularDoubleImageBlock from './common/modularDoubleImageBlock'
+import modularDoubleLandscapeImageBlock from './common/modularDoubleLandscapeImageBlock'
 import modularTripleImageBlock from './common/modularTripleImageBlock'
 import modularSideBySideImageBlock from './common/modularSideBySideImageBlock'
 import modularBeforeAfterBlock from './common/modularBeforeAfterBlock'
@@ -42,6 +43,7 @@ export default createSchema({
     modularTripleImageBlock,
     modularProcessBlock,
     modularDoubleImageBlock,
+    modularDoubleLandscapeImageBlock,
     modularSideBySideImageBlock,
     textBlock,
     seo

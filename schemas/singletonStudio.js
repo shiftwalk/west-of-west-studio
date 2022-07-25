@@ -1,18 +1,22 @@
+import {
+  FiAlignLeft
+} from 'react-icons/fi'
+
 export default {
   title: 'Studio',
   name: 'studio',
   type: 'document',
   __experimental_actions: ['update', 'create', 'delete', 'publish'],
   fields: [
-    {
-      name: 'devNote',
-      type: 'note',
-      options: {
-        headline: 'Dev Note: Work In Progress',
-        message: 'This page is a work in progress and may change, please feel free to still use.',
-        tone: 'caution'
-      }
-    },
+    // {
+    //   name: 'devNote',
+    //   type: 'note',
+    //   options: {
+    //     headline: 'Dev Note: Work In Progress',
+    //     message: 'This page is a work in progress and may change, please feel free to still use.',
+    //     tone: 'caution'
+    //   }
+    // },
     {
       title: 'Title',
       name: 'title',
@@ -122,26 +126,56 @@ export default {
     //   },
     //   validation: Rule => Rule.required()
     // },
+    // {
+    //   title: 'Past Team',
+    //   name: 'pastTeam',
+    //   description: 'The comma seperated list of past team members',
+    //   type: 'text',
+    //   rows: 3,
+    // },
+    // {
+    //   title: 'Recognition',
+    //   name: 'recognition',
+    //   description: 'The comma seperated list of recoginitions',
+    //   type: 'text',
+    //   rows: 3,
+    // },
+    // {
+    //   title: 'Publications',
+    //   name: 'publications',
+    //   description: 'The comma seperated list of publications',
+    //   type: 'text',
+    //   rows: 3,
+    // },
     {
-      title: 'Past Team',
-      name: 'pastTeam',
-      description: 'The comma seperated list of past team members',
-      type: 'text',
-      rows: 3,
-    },
-    {
-      title: 'Recognition',
-      name: 'recognition',
-      description: 'The comma seperated list of recoginitions',
-      type: 'text',
-      rows: 3,
-    },
-    {
-      title: 'Publications',
-      name: 'publications',
-      description: 'The comma seperated list of publications',
-      type: 'text',
-      rows: 3,
+      title: 'Additional Content Blocks',
+      name: 'additionalContentBlocks',
+      type: 'array',
+      of: [
+        {
+          title: 'Content Block',
+          name: 'contentBlock',
+          type: 'object',
+          icon: FiAlignLeft,
+          fields: [
+            {name: 'title', type: 'string', title: 'Title', description: 'The title of this block, eg: "Past Team" or "Publications"'},
+            {name: 'text', type: 'text', rows: 3, title: 'Text'},
+          ],
+          preview: {
+            select: {
+              title: 'title',
+              text: 'text'
+            },
+            prepare(selection) {
+              const {title, text} = selection
+              return {
+                title: title,
+                subtitle: `${text}`
+              }
+            }
+          }
+        }
+      ]
     },
     // {
     //   title: 'Services Text',
