@@ -96,36 +96,36 @@ export default {
       ],
       validation: Rule => Rule.required()
     },
-    {
-      title: 'General Email',
-      name: 'generalEmail',
-      type: 'string',
-      validation: Rule => Rule.required()
-    },
+    // {
+    //   title: 'General Email',
+    //   name: 'generalEmail',
+    //   type: 'string',
+    //   validation: Rule => Rule.required()
+    // },
     {
       title: 'Telephone',
       name: 'telephone',
       type: 'string',
       validation: Rule => Rule.required()
     },
-    {
-      title: 'Press Email',
-      name: 'pressEmail',
-      type: 'string',
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'New Business Email',
-      name: 'newBusinessEmail',
-      type: 'string',
-      validation: Rule => Rule.required()
-    },
-    {
-      title: 'Employment Email',
-      name: 'employmentEmail',
-      type: 'string',
-      validation: Rule => Rule.required()
-    },
+    // {
+    //   title: 'Press Email',
+    //   name: 'pressEmail',
+    //   type: 'string',
+    //   validation: Rule => Rule.required()
+    // },
+    // {
+    //   title: 'New Business Email',
+    //   name: 'newBusinessEmail',
+    //   type: 'string',
+    //   validation: Rule => Rule.required()
+    // },
+    // {
+    //   title: 'Employment Email',
+    //   name: 'employmentEmail',
+    //   type: 'string',
+    //   validation: Rule => Rule.required()
+    // },
     {
       title: 'SEO / Share Settings',
       name: 'seo',
