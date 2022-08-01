@@ -1,5 +1,5 @@
 import {
-  FiMapPin
+  FiMapPin, FiMessageCircle
 } from 'react-icons/fi'
 
 export default {
@@ -58,6 +58,37 @@ export default {
               return {
                 title: title,
                 subtitle: `${address}`
+              }
+            }
+          }
+        }
+      ],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Emails',
+      name: 'emails',
+      type: 'array',
+      of: [
+        {
+          title: 'Item',
+          name: 'item',
+          type: 'object',
+          icon: FiMessageCircle,
+          fields: [
+            {name: 'title', type: 'string', title: 'Title'},
+            {name: 'email', type: 'string', title: 'Email'},
+          ],
+          preview: {
+            select: {
+              title: 'title',
+              email: 'email'
+            },
+            prepare(selection) {
+              const {title, email} = selection
+              return {
+                title: title,
+                subtitle: `${email}`
               }
             }
           }
