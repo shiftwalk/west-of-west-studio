@@ -133,13 +133,62 @@ export default {
     //   type: 'text',
     //   rows: 3,
     // },
-    // {
-    //   title: 'Recognition',
-    //   name: 'recognition',
-    //   description: 'The comma seperated list of recoginitions',
-    //   type: 'text',
-    //   rows: 3,
-    // },
+    {
+      title: 'Awards',
+      name: 'awards',
+      type: 'array',
+      of: [
+        {
+          title: 'Award',
+          name: 'award',
+          type: 'object',
+          icon: FiAlignLeft,
+          fields: [
+            {name: 'text', type: 'string', title: 'Text', description: 'The text of this award, eg: "2023  Architects Newspaper Top 50 Architects and Designers"'},
+            {name: 'url', type: 'url', title: 'Url', description: 'The optional URL to link to the award page"'},
+          ],
+          preview: {
+            select: {
+              text: 'text'
+            },
+            prepare(selection) {
+              const {text} = selection
+              return {
+                title: text,
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      title: 'Press',
+      name: 'press',
+      type: 'array',
+      of: [
+        {
+          title: 'Item',
+          name: 'Item',
+          type: 'object',
+          icon: FiAlignLeft,
+          fields: [
+            {name: 'text', type: 'string', title: 'Text', description: 'The text heading of this piece of press"'},
+            {name: 'url', type: 'url', title: 'Url', description: 'The optional URL to link to the press page"'},
+          ],
+          preview: {
+            select: {
+              text: 'text'
+            },
+            prepare(selection) {
+              const {text} = selection
+              return {
+                title: text,
+              }
+            }
+          }
+        }
+      ]
+    },
     // {
     //   title: 'Publications',
     //   name: 'publications',
